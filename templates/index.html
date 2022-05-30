@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+{% block body %}
+<img src="static/images/cafe6.jpeg" class="banner-img img-fluid rounded m-0 h-0 d-inline-block" alt="Cafe">
+<h1 class="find">Find Cafes<br>Near You.</h1>
+<a href="{{ url_for('places') }}"><button type="button" class="places btn btn-lg btn-outline-light">Find Cafes <i
+        class="fa-solid fa-location-dot fa-bounce"></i></button></a>
+<img src="static/images/cafe8.jpg" class="beautiful_cafe_photo rounded float-start" alt="Beautiful Cafe">
+<div>
+    <h2 class="find-places">Find Beautiful Cafes</h2>
+    <p class="find-places-para">Find Beautiful Cafes for Your Self and <br>
+        Friends For Meet up And Bussiness <br>
+        Meetings
+    </p>
+</div>
+<div>
+    <h2 class="free-wifi">Free & Speed Wifi</h2>
+    <p class="free-wifi-para">Find Free Wifi for Your Business<br>
+        Meetings</p>--
+</div>
+<img src="static/images/cafe2.jpg" class="wifi-photo rounded float-end" alt="girl drinking coffee">
+<img src="static/images/cafe10.jpg" class="food-photo rounded float-end" alt="Food">
+<h2 class="favourite-food">Your Favorite Food</h2>
+<p class="favourite-food-para">Find Your favourite foods for <br>
+    your parties and dine
+</p>
+
+<a href="{{ url_for('places') }}"><button class="places-button"> Find Places
+    <i class="fa-solid fa-location-dot fa-bounce"></i></button></a>
+{% endblock %}
+
+

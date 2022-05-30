@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">
+    <title>Cafe&Wifi Website</title>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Cafe&Wifi</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="{{ url_for('home') }}">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('places') }}">Places</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('post_new_cafe') }}">Add</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('contact') }}">Contact</a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+</nav>
+
+{% block body %} {% endblock %}
+
+<footer>
+    <div class="footer">
+        <div class="social">
+            <a href="https://www.instagram.com/kunal_shrigadi1/"><i
+                    class="social-media fa-brands fa-2xl fa-instagram"></i></a>
+            <a href="https://www.facebook.com/kunal.shrigadi.315/"><i
+                    class="social-media fa-brands fa-2xl fa-facebook"></i></a>
+            <a href="https://twitter.com/KunalShrigadi"><i class="social-media fa-brands fa-2xl fa-twitter"></i></a>
+        </div>
+    </div>
+        <h5 class="footer-logo">Cafe&Wifi</h5>
+        <div class="footer-text">
+            <h6> Lets Find best Cafe's nearby</h6>
+            <h7>
+                Cafe&Wifi is the best website to find your favourite Cafe's nearby,<br>
+                students, business man and make new friends.
+            </h7>
+        </div>
+        <div class="footer-copyrights">
+            <h8>
+                Copyright 2020-22 by shrigadi Data, All Rights Reserved<br>
+                Cafe&Wifi is Powered by Kunal Shrigadi
+            </h8>
+        </div>
+        <h6 class="last-logo">Cafe&Wifi</h6>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/f59f942a5d.js" crossorigin="anonymous"></script>
+</body>
+</html>

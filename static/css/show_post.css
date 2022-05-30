@@ -1,0 +1,65 @@
+.cafe {
+    width: 100%;
+    height: 400px;
+    background-position: center;
+}
+
+.font {
+    position: absolute;
+    text-shadow: -2px 2px 0 #000;
+    top: 380px;
+    left: 340px;
+    color: #e5e5e5;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: Noto Sans, sans-serif;
+    font-weight: 700;
+}
+
+.timing {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.intro {
+    margin-top: 50px;
+}
+
+.prod {
+    font-size: 20px;
+}
+
+header {
+    width: 100vw;
+}
+
+.footer {
+    top: 70em;
+}
+
+.footer-text {
+    top: 90em;
+}
+
+.footer-logo {
+    top: 68em;
+}
+
+.footer-copyrights {
+    top: 103em;
+}
+.last-logo {
+    top: 100em;
+}
+
+@media only screen and (min-width: 375px) {
+    .font {
+        left: auto;
+    }
+    .timing {
+        font-size: 16px;
+    }
+    .prod {
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,58 @@
+{% extends "layout.html" %}
+{% block body %}
+
+{% for post in posts %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/places.css')}}">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap" rel="stylesheet">
+<!--<div class="container">-->
+<!--    <div class="row">-->
+<!--        <div class="col-lg-8 col-md-10 mx-auto">-->
+<!--            <div class="card mb-3" style="max-width: 540px;">-->
+<!--                <a class="link-dark" href="{{ url_for('show_post', post_id=post.srno) }}">-->
+<!--                    <div class="row g-0">-->
+<!--                        <div class="col-md-4">-->
+<!--                            <img src="{{ post.image_url }}" class="img-fluid rounded-start" alt="Cafe Image">-->
+<!--                        </div>-->
+
+<!--                        <div class="col-md-8">-->
+<!--                            <div class="card-body">-->
+
+<!--                                <h5 class="card-title">{{ post.cafe_name }}</h5>-->
+<!--                                <p class="card-text">{{ post.open }} - {{ post.close }}</p>-->
+<!--                                <button type="button" class="btn btn-outline-secondary"><a-->
+<!--                                        class="link-secondary" href="{{ post.map_url }}">Wanna Go-->
+<!--                                    Their??</a></button>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </a>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+
+<!--</div>-->
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+            <div class="card mb-5" style="max-width: 540px;">
+                <a class="link-dark" href="{{ url_for('show_post', post_id=post.srno) }}">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="{{ post.image_url }}" class="img-fluid rounded-start" alt="Cafe Photo">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">{{ post.cafe_name }}</h5>
+                                <p class="card-text">{{ post.open }} - {{ post.close }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+            {% endfor %}
+
+            {% endblock %}

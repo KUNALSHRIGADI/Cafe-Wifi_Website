@@ -1,0 +1,96 @@
+{% extends "layout.html" %}
+{% block body %}
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/add.css')}}">
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/css/bootstrap-datetimepicker.min.css"
+      rel="stylesheet">
+
+<img src="static/images/cup-coffee.jpg" class="beautiful_cafe_photo img-fluid  w-100 m-0 h-0 d-inline-block" alt="...">
+<h1 class="add m-5">Add Your Cafe Here</h1>
+
+<div class="add-cafe container m-5">
+    <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+            <form action="{{ url_for('post_new_cafe') }}" method="POST">
+                <div class="mb-3">
+                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                           placeholder="Cafe Name" name="cafe_name">
+                </div>
+                <div class="mb-3">
+                    <input type="text" class="form-control" id="exampleInputPassword2" placeholder="map url"
+                           name="map_url">
+                    <label for="exampleInputPassword2" class="form-label">Paste your map url here</label>
+                </div>
+                <div class="mb-3">
+                    <input type="text" class="form-control" id="exampleInputPassword3" placeholder="Image url"
+                           name="image_url">
+                    <label for="exampleInputPassword3" class="form-label">Paste your image url here</label>
+                </div>
+                <div class="mb-3">
+                    <input type="text" class="form-control" id="exampleInputPassword4" placeholder="Phone Number"
+                           name="phone">
+                    <label for="exampleInputPassword3" class="form-label">Phone Number</label>
+                </div>
+                <div class="mb-3">
+                    <input type="text" class="form-control" id="exampleInputPassword6" placeholder="Banner Image url"
+                           name="banner_img_url">
+                    <label for="exampleInputPassword3" class="form-label">Paste your banner-image url here</label>
+                </div>
+                <div class="mb-3">
+                    <label class="form-check-label" >
+                        Productivity:
+                    </label>
+                    <input type="text" class="form-control" id="exampleInputPassword5" placeholder="Eg. coffee, food, accept credit/debit cards , parking, open area"
+                           name="productivity">
+                </div>
+                <div class="mb-3">
+                    <label class="form-check-label" >
+                        Address:
+                    </label>
+                    <input type="text" class="form-control" id="exampleInputPassword60" placeholder="Address"
+                           name="address">
+                </div>
+
+                <input name="opening-time" class="form-control"
+                       type="text" id="datetime" placeholder="Opening Time"/>
+
+                <input name="closing-time" class="form-control"
+                       type="text" id="datetime1" placeholder="Closing Time"/>
+
+                <div class="mb-3">
+                    <input type="text" class="form-control" aria-describedby="emailHelp"
+                           placeholder="How many seats?" name="seat">
+                </div>
+                <div class="mb-3">
+    <textarea class="form-control" name="description" placeholder="Description"
+              id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js">
+</script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js">
+</script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment.min.js">
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/js/bootstrap-datetimepicker.min.js">
+</script>
+
+<script>
+		$('#datetime').datetimepicker({
+			format: 'hh:mm a'
+		});
+		$('#datetime1').datetimepicker({
+			format: 'hh:mm a'
+		});
+
+
+
+</script>
+
+{% endblock %}

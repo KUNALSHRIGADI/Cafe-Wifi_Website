@@ -1,0 +1,39 @@
+.beautiful_cafe_photo {
+    width: 25%;
+    margin: 200px;
+}
+
+.contact{
+    color: #e5e5e5;
+    font-size: 80px;
+    position: absolute;
+    top: 200px;
+    left: 90px;
+}
+
+
+
+@media only screen and (max-width: 930px) {
+    .contact {
+        font-size: 50px;
+        text-align: center;
+        left: 1em;
+        top: 2em;
+    }
+    .contact-page {
+        position: absolute;
+        top: 500px;
+        left: -35px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .contact {
+        top: 1em;
+        left: 0em;
+        font-size:40px;
+    }
+    .contact-page {
+        top: 20em;
+    }
+}

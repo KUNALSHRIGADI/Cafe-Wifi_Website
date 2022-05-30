@@ -1,0 +1,417 @@
+.banner-img {
+    width: 100vw;
+}
+.find{
+    color: #e5e5e5;
+    font-size: 80px;
+    position: absolute;
+    top: 200px;
+    left: 90px;
+}
+
+.beautiful_cafe_photo {
+    width: 25%;
+    margin: 200px 150px 200px 250px;
+}
+
+.places {
+    font-size: 30px;
+    font-weight: 600;
+    position: absolute;
+    top: 500px;
+    left: 90px;
+}
+
+.find-places {
+    position: absolute;
+    top: 950px;
+    right: 350px;
+}
+
+.find-places-para {
+    color: #6c757d;
+    font-size: 20px;
+    position: absolute;
+    top: 1000px;
+    right: 310px;
+    border-left: #6c757d solid 1px;
+    padding-left: 70px;
+}
+
+.free-wifi-para {
+    color: #6c757d;
+    font-size: 20px;
+    position: absolute;
+    top: 1400px;
+    left: 285px;
+    border-right: #6c757d solid 1px;
+    padding-right: 70px;
+}
+
+.free-wifi {
+    position: absolute;
+    top: 1330px;
+    left: 285px;
+}
+
+.wifi-photo {
+    width: 25%;
+    position: absolute;
+    margin: 100px;
+    top: 1200px;
+    right: 205px;
+}
+
+.food-photo {
+    width: 20%;
+    position: absolute;
+    top: 1700px;
+    left: 325px;
+}
+
+.favourite-food {
+    position: absolute;
+    top: 1700px;
+    right: 345px;
+}
+
+.favourite-food-para {
+    font-size: 20px;
+    position: absolute;
+    top: 1750px;
+    right: 360px;
+    border-left: #6c757d solid 1px;
+    padding-left: 70px;
+}
+
+.social-media {
+    color: white;
+    padding: 20px;
+}
+
+.footer {
+    text-align: center;
+    width: 100%;
+    height: 400px;
+    background-color: #343a40;
+    position: absolute;
+    top: 2020px;
+    margin: 200px 0px;
+    padding: 100px;
+}
+
+.footer-text {
+    color: whitesmoke;
+    position: absolute;
+    top: 2330px;
+    left: 40px;
+}
+
+.footer-logo {
+    color: whitesmoke;
+    position: absolute;
+    top: 2260px;
+    left: 20px;
+}
+
+.footer-copyrights {
+    color: #6c757d;
+    text-align: end;
+    position: absolute;
+    top: 2500px;
+    right: 20px;
+}
+
+.last-logo {
+    color: #b4b8ba;
+    position: absolute;
+    top: 2450px;
+    right: 20px;
+}
+
+.places-button {
+    position: absolute;
+    top: 2100px;
+    left: 675px;
+    background: #d1d1d1;
+    background-image: -webkit-linear-gradient(top, #d1d1d1, #464747);
+    background-image: -moz-linear-gradient(top, #d1d1d1, #464747);
+    background-image: -ms-linear-gradient(top, #d1d1d1, #464747);
+    background-image: -o-linear-gradient(top, #d1d1d1, #464747);
+    background-image: linear-gradient(to bottom, #d1d1d1, #464747);
+    -webkit-border-radius: 11;
+    -moz-border-radius: 11;
+    border-radius: 11px;
+    text-shadow: 1px 1px 3px #666666;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 25px;
+    padding: 15px 25px 15px 25px;
+    text-decoration: none;
+  }
+  
+  .places-button:hover {
+    background: #b9bcbd;
+    background-image: -webkit-linear-gradient(top, #b9bcbd, #b4b8ba);
+    background-image: -moz-linear-gradient(top, #b9bcbd, #b4b8ba);
+    background-image: -ms-linear-gradient(top, #b9bcbd, #b4b8ba);
+    background-image: -o-linear-gradient(top, #b9bcbd, #b4b8ba);
+    background-image: linear-gradient(to bottom, #b9bcbd, #b4b8ba);
+    text-decoration: none;
+  }
+
+@media only screen and (max-width: 1024px) {
+    .beautiful_cafe_photo {
+        width: 80%;
+        margin-left: 10%;
+    }
+    .find {
+        font-size: 40px;
+    }
+    .places {
+        top: 11em;
+    }
+    .find-places {
+        top: 45em;
+    }
+    .find-places-para {
+        top: 72em;
+        padding-right: 0px;
+    }
+    .wifi-photo {
+        top: 100em;
+        width: 80%;
+        left: 1.5em;
+    }
+    .free-wifi {
+        top: 78em;
+    }
+
+    .free-wifi-para {
+        top: 122em;
+    }
+    .food-photo {
+        width: 80%;
+        top: 165em;
+        left: 7em;
+    }
+    .favourite-food {
+        top: 115em;
+    }
+    .favourite-food-para {
+        top: 178em;
+    }
+    .places-button {
+        top: 153em;
+        left: 15em;
+    }
+    .footer {
+        top: 235em;
+    }
+    .footer-text {
+        top: 255em;
+    }
+    .footer-logo {
+        top: 200em;
+    }
+    .footer-copyrights {
+        top: 265em;
+    }
+    .last-logo {
+        top: 262em;
+    }
+  }
+
+@media only screen and (max-width: 784px) {
+    .find {
+        top: 3em;
+    }
+    .places {
+        top: 8em;
+    }
+    .find-places {
+        width: 100%;
+        top: 39em;
+        left: 9em;
+    }
+    .find-places-para {
+        width: 100%;
+        top: 60em;
+        left: 9em;
+    }
+    .wifi-photo {
+        top: 85em;
+        left: -2em;
+    }
+    .free-wifi {
+        top: 70em;
+        left: 8.5em;
+    }
+    .free-wifi-para {
+        top: 103em;
+        left: 10em;
+    }
+    .food-photo {
+        width: 80%;
+        top: 145em;
+        left: 5em;
+    }
+    .favourite-food {
+        width: 100%;
+        top: 105em;
+        left: 9em;
+    }
+    .favourite-food-para {
+        width: 100%;
+        top: 153em;
+        left: 10em;
+    }
+    .places-button {
+        top: 130em;
+        left: 10em;
+    }
+    .footer {
+        top: 200em;
+    }
+    .footer-text {
+        top: 220em;
+    }
+    .footer-logo {
+        top: 172em;
+    }
+    .footer-copyrights {
+        top: 230em;
+    }
+    .last-logo {
+        top: 227em;
+    }
+}
+
+@media only screen and (max-width: 580px) {
+    .beautiful_cafe_photo {
+        margin-right:10%;
+        margin-left:15%;
+    }
+    .find {
+        left: 30px;
+        font-size: 30px;
+    }
+    .places {
+        top: 6em;
+        left: 30px;
+        font-size: 30px;
+    }
+    .find-places {
+        width: 60%;
+        left: 7em;
+    }
+    .find-places-para {
+        text-align: center;
+        top: 56em;
+        left: 6em;
+    }
+    .free-wifi {
+        top: 73em;
+        left: 7em;
+    }
+    .free-wifi-para {
+        width: 100%;
+        top: 100em;
+        left: 8em;
+    }
+    .food-photo {
+        left: 3em;
+    }
+    .favourite-food {
+        top: 110em;
+        left: 6.5em;
+    }
+    .favourite-food-para {
+        top: 150em;
+        left: 5em;
+    }
+    .places-button {
+        left: 7em;
+    }
+    .footer-text {
+        top: 255em;
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .beautiful_cafe_photo {
+        margin-right : 0;
+    }
+    .find {
+        top: 4em;
+        font-size: 20px;
+    }
+    .places {
+        top: 7em;
+        font-size: 20px;
+    }
+    .banner-img {
+        width: 100%;
+    }
+    .find-places {
+        top: 30em;
+        left: 4em;
+    }
+    .find-places-para {
+        top: 40em;
+        left: 0em;
+        padding-left: 0px;
+    }
+    .wifi-photo {
+        top: 60em;
+        left: -3em;
+        margin-right: 10%;
+    }
+    .free-wifi {
+        top: 55em;
+        left: 4em;
+    }
+    .free-wifi-para {
+        width: 80%;
+        top: 72em;
+        left: 3em;
+        padding-right: 0px;
+    }
+    .food-photo {
+        top: 105em;
+    }
+    .favourite-food {
+        width: 60%;
+        top: 85em;
+        left: 4em;
+    }
+    .favourite-food-para {
+       top: 110em;
+       left: 3em;
+       padding-left: 40px;
+       width: 80%;
+    }
+    .places-button {
+        top: 95em;
+        left: 4em;
+    }
+    .footer {
+        top: 150em;
+    }
+    .footer-text {
+        top: 232em;
+        font-size: 12px;
+    }
+    .footer-logo {
+        font-size: 20px;
+        top: 132em;
+    }
+    .footer-copyrights {
+        font-size: 12px;
+        top: 245em;
+    }
+    .last-logo {
+        top: 180em;
+    }
+}

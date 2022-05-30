@@ -1,0 +1,66 @@
+.beautiful_cafe_photo {
+    width: 25%;
+    margin: 200px;
+}
+
+.add{
+    width: 30%;
+    color: #e5e5e5;
+    font-size: 90px;
+    position: absolute;
+    top: 200px;
+    left: 90px;
+}
+
+.add-cafe {
+    width: 80%;
+    position: absolute;
+    top: 70em;
+    left: 20em;
+}
+
+@media only screen and (max-width: 1190px) {
+    .add {
+        font-size:60px;
+        top: 2em;
+        left: 1em;
+    }
+}
+
+@media only screen and (max-width: 870px) {
+    .add {
+        font-size: 50px;
+    }
+}
+
+@media only screen and (max-width: 870px) {
+    .add {
+        font-size: 40px;
+    }
+    .add-cafe {
+        top: 35em;
+    }
+}
+
+@media only screen and (max-width: 590px) {
+    .add {
+        font-size: 30px;
+    }
+    .add-cafe {
+        top: 25em;
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .add {
+        font-size: 25px;
+        left: 0em;
+        top: 1em;
+    }
+    .add-cafe {
+        top: 20em;
+        width: 80%;
+        left: 2em;
+    }
+}
