@@ -15,8 +15,8 @@
 .add-cafe {
     width: 80%;
     position: absolute;
-    top: 70em;
-    left: 20em;
+    top: 50em;
+    left: 10em;
 }
 
 @media only screen and (max-width: 1190px) {
