@@ -2,13 +2,15 @@ from flask import Flask, render_template, request, redirect, url_for, flash, abo
 from flask_sqlalchemy import SQLAlchemy
 from flask_bootstrap import Bootstrap
 from datetime import datetime
+import os
 
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = 'Hackeriskunal1@'
+app.config['SECRET_KEY'] = os.environ.get('Hackeriskunal1@')
 Bootstrap(app)
 
-app.config["SQLALCHEMY_DATABASE_URI"] = 'mysql://root:@localhost/cafe&wifi'
+app.config["SQLALCHEMY_DATABASE_URI"] = os.environ.get("postgres://dtsugfnitsprzh:ee38463eb1e518aea9bb97c434350608abdc0879191f83e3bd7dcad6e71ace1d@ec2-34-198-186-145.compute-1.amazonaws.com:5432/d4313pslkaneut")
+app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///cafes.db"
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 db = SQLAlchemy(app)
 
