@@ -9,7 +9,7 @@ app = Flask(__name__)
 app.config['SECRET_KEY'] = os.environ.get('Hackeriskunal1@')
 Bootstrap(app)
 
-app.config["SQLALCHEMY_DATABASE_URI"] = "postgres://mgwfknpaximhec:72eedcdee140dd6220e1aadf5f31dd11f8220dbab285c812bd8e2ee0f50c171f@ec2-23-23-182-238.compute-1.amazonaws.com:5432/d9gppt14ier6uf"
+app.config["SQLALCHEMY_DATABASE_URI"] = os.environ.get("postgres://mgwfknpaximhec:72eedcdee140dd6220e1aadf5f31dd11f8220dbab285c812bd8e2ee0f50c171f@ec2-23-23-182-238.compute-1.amazonaws.com:5432/d9gppt14ier6uf", "sqlite:///cafes.db")
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 db = SQLAlchemy(app)
 
